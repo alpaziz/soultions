@@ -57,6 +57,15 @@ class Node:
 
 
 
+	################
+	#SOLUTIONS
+	################
+	def node_inorder(self):
+		pass
+
+	def node_postorder(self):
+		pass
+
 
 class Tree:
 	def __init__(self, root = None):
@@ -88,22 +97,31 @@ class Tree:
 		print("Traversing:")
 		self.root.node_preorder()
 
+	
+
 
 def main():
 	bst_1 = Tree()
 
 
-	bst_1.tree_insert(d = 10)
+	bst_1.tree_insert(d = 5)
 
-	bst_1.tree_insert(d = 15)
+	bst_1.tree_insert(d = 2)
 
 	# print(bst_1.tree_find(d = 1000))
 
 	# bst_1.tree_preorder()
 
-	bst_1.tree_insert(d = 100)
+	bst_1.tree_insert(d = 12)
 
-	bst_1.tree_insert(d = 1)
+	bst_1.tree_insert(d =  1)
+
+	bst_1.tree_insert(d = 3)
+
+	bst_1.tree_insert(d = 9)
+	bst_1.tree_insert(d = 21)
+
+
 
 	bst_1.tree_preorder()
 
